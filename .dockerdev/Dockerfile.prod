@@ -16,7 +16,6 @@ RUN bundle config set --local without 'development test' && bundle install --job
 
 COPY . ./
 
-RUN chown -R web:web ./
 USER 999:999
 EXPOSE 3000
 CMD echo "hello world"
